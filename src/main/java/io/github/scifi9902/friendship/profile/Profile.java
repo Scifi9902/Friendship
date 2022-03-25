@@ -4,18 +4,19 @@ import com.google.gson.annotations.SerializedName;
 import io.github.scifi9902.friendship.friend.Friend;
 import io.github.scifi9902.friendship.friend.invite.FriendRequest;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.*;
 
-@Getter
+@Getter @Setter
 public class Profile {
 
     @SerializedName("_id")
     private final UUID uniqueId;
 
-    private final List<Friend> friends;
+    private List<Friend> friends;
 
-    private final List<FriendRequest> friendRequests;
+    private List<FriendRequest> friendRequests;
 
     /**
      * Constructs a new {@link Profile} instance

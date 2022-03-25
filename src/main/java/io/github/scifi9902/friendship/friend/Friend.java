@@ -7,9 +7,9 @@ import java.util.UUID;
 @Getter
 public class Friend {
 
-    private UUID friendUUID;
+    private final UUID friendUUID;
 
-    private long friendsSince;
+    private final long friendsSince;
 
     /**
      * Constructs a new {@link Friend} instance
